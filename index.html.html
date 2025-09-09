@@ -1,0 +1,135 @@
+<!--
+  Single-file HTML + CSS link hub for Ekushey Sangbad & Kaler Somaj
+  Updated with real Facebook / YouTube URLs + colored icons.
+-->
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ekushey Sangbad & Kaler Somaj — Links Hub</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent-facebook:#1877f2; /* Facebook blue */
+      --accent-youtube:#ff0000;  /* YouTube red */
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Noto Sans Bangla', Roboto, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:linear-gradient(180deg,var(--bg),#071022); color:#e6eef8; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex; align-items:center; justify-content:center; padding:32px;
+    }
+    .container{width:100%;max-width:980px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0ea5e9,#6366f1);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .site-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .site-title h2{margin:0;font-size:16px}
+    .site-sub{color:var(--muted);font-size:13px;margin:0}
+
+    .section{margin-top:12px}
+    .section h3{display:flex;align-items:center;gap:10px;margin:0 0 8px;font-size:14px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+    .pill .dot{width:10px;height:10px;border-radius:50%}
+    .pill img{width:16px;height:16px;filter:invert(100%)}
+    .pill.facebook{background:var(--accent-facebook);color:#fff}
+    .pill.youtube{background:var(--accent-youtube);color:#fff}
+
+    ul.links{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    a.link-item{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;background:var(--glass);text-decoration:none;color:inherit}
+    a.link-item:hover{transform:translateY(-3px)}
+    .left{display:flex;align-items:center;gap:10px}
+    .fav{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .meta{font-size:13px;color:var(--muted)}
+    .footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsive */
+    @media (max-width:760px){
+      .grid{grid-template-columns:1fr}
+      body{padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">ES</div>
+      <div>
+        <h1>Ekushey Sangbad & Kaler Somaj — Links Hub</h1>
+        <p class="lead">All Facebook & YouTube links in one place.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Ekushey Sangbad -->
+      <section class="card" aria-labelledby="ek-title">
+        <div class="site-title">
+          <h2 id="ek-title">Ekushey Sangbad</h2>
+          <p class="site-sub">Facebook & YouTube channels</p>
+        </div>
+
+        <div class="section">
+          <h3><span class="pill facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /> Facebook</span></h3>
+          <ul class="links">
+            <li><a class="link-item" href="https://www.facebook.com/Ekusheysangbad" target="_blank" rel="noopener"><span class="left"><span class="fav">F</span><span><strong>Ekushey Sangbad</strong><div class="meta">Official Facebook page</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.facebook.com/ekusheysangbadentertainment" target="_blank" rel="noopener"><span class="left"><span class="fav">E</span><span><strong>Ekushey Sangbad Entertainment</strong><div class="meta">Entertainment page</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.facebook.com/EkusheySangbadInternational.official" target="_blank" rel="noopener"><span class="left"><span class="fav">I</span><span><strong>Ekushey Sangbad International</strong><div class="meta">International feed</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.facebook.com/ekusheysangbadsports" target="_blank" rel="noopener"><span class="left"><span class="fav">S</span><span><strong>Ekushey Sangbad Sports</strong><div class="meta">Sports coverage</div></span></span></a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="pill youtube"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /> YouTube</span></h3>
+          <ul class="links">
+            <li><a class="link-item" href="https://www.youtube.com/@Ekushey_Sangbad" target="_blank" rel="noopener"><span class="left"><span class="fav">Y</span><span><strong>Ekushey Sangbad</strong><div class="meta">Official YouTube channel</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.youtube.com/@ekusheyentertainment" target="_blank" rel="noopener"><span class="left"><span class="fav">E</span><span><strong>Ekushey Sangbad Entertainment</strong><div class="meta">Entertainment channel</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.youtube.com/@EkusheySangbadInternational" target="_blank" rel="noopener"><span class="left"><span class="fav">I</span><span><strong>Ekushey Sangbad International</strong><div class="meta">International channel</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.youtube.com/@ekusheySangbadsports" target="_blank" rel="noopener"><span class="left"><span class="fav">S</span><span><strong>Ekushey Sangbad Sports</strong><div class="meta">Sports channel</div></span></span></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Kaler Somaj -->
+      <section class="card" aria-labelledby="ks-title">
+        <div class="site-title">
+          <h2 id="ks-title">Kaler Somaj</h2>
+          <p class="site-sub">Facebook & YouTube channels</p>
+        </div>
+
+        <div class="section">
+          <h3><span class="pill facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /> Facebook</span></h3>
+          <ul class="links">
+            <li><a class="link-item" href="https://www.facebook.com/kalersomaj" target="_blank" rel="noopener"><span class="left"><span class="fav">K</span><span><strong>Kaler Somaj</strong><div class="meta">Official Facebook page</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.facebook.com/kalersomajsports" target="_blank" rel="noopener"><span class="left"><span class="fav">S</span><span><strong>Kaler Somaj Sports</strong><div class="meta">Sports page</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.facebook.com/kalersomajinternational" target="_blank" rel="noopener"><span class="left"><span class="fav">I</span><span><strong>Kaler Somaj International</strong><div class="meta">International page</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.facebook.com/kalersomajentertainment" target="_blank" rel="noopener"><span class="left"><span class="fav">E</span><span><strong>Kaler Somaj Entertainment</strong><div class="meta">Entertainment page</div></span></span></a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="pill youtube"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /> YouTube</span></h3>
+          <ul class="links">
+            <li><a class="link-item" href="https://www.youtube.com/@kalersomaj" target="_blank" rel="noopener"><span class="left"><span class="fav">Y</span><span><strong>Kaler Somaj</strong><div class="meta">Official YouTube channel</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.youtube.com/@KalerSomajEntertainment" target="_blank" rel="noopener"><span class="left"><span class="fav">E</span><span><strong>Kaler Somaj Entertainment</strong><div class="meta">Entertainment channel</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.youtube.com/@KalersomajSports" target="_blank" rel="noopener"><span class="left"><span class="fav">S</span><span><strong>Kaler Somaj Sports</strong><div class="meta">Sports channel</div></span></span></a></li>
+            <li><a class="link-item" href="https://www.youtube.com/@KalerSomajInternational" target="_blank" rel="noopener"><span class="left"><span class="fav">I</span><span><strong>Kaler Somaj International</strong><div class="meta">International channel</div></span></span></a></li>
+          </ul>
+        </div>
+
+      </section>
+    </main>
+
+    <div class="footer">All official Facebook & YouTube links for Ekushey Sangbad & Kaler Somaj.</div>
+  </div>
+</body>
+</html>

@@ -27,6 +27,22 @@
       letter-spacing: 1px;
     }
 
+    /* Solar Gradient Text */
+    .follow-text {
+      font-size: 1.6rem;   /* বড় টেক্সট */
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff0057, #ffae00, #00c853, #2979ff, #d500f9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 5s linear infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0%; }
+      100% { background-position: 100%; }
+    }
+
     .section {
       margin: 30px auto;
       max-width: 800px;
@@ -97,6 +113,8 @@
 
   <header>
     <h1>📺 Ekushey Sangbad & Kaler Somaj — All Facebook & YouTube Links</h1>
+    <!-- নিচে আলাদা দ্বিতীয় লাইন -->
+    <p class="follow-text">🌟 "FOLLOW এবং SUBSCRIBE" করতে নামের উপরে ক্লিক করুন 🌟</p>
   </header>
 
   <!-- Ekushey Sangbad Facebook -->
@@ -146,58 +164,6 @@
     <div class="link-box"><a href="https://www.youtube.com/@KalersomajSports" target="_blank">Kaler Somaj Sports</a></div>
     <div class="link-box"><a href="https://www.youtube.com/@KalerSomajInternational" target="_blank">Kaler Somaj International</a></div>
   </div>
-
-<h2> 
-     <!doctype html>
-<html lang="bn">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>প্রোগ্রাম শিডিউল — EkusheySangbad</title>
-  <style>
-    :root{
-      --bg:#0f1724; /* deep navy */
-      --card:#0b1220;
-      --accent:#ffb703; /* warm accent */
-      --muted:#94a3b8;
-      --glass: rgba(255,255,255,0.03);
-      --radius:14px;
-      font-family: 'Noto Sans Bengali', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,var(--bg),#071023);color:#e6eef8;min-height:100vh;padding:28px}
-
-    .wrap{max-width:980px;margin:0 auto}
-    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
-    .logo{width:62px;height:62px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ff8a00);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071023}
-    h1{font-size:20px;margin:0}
-    p.lead{margin:0;color:var(--muted);font-size:14px}
-
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
-
-    .card{background:linear-gradient(180deg,var(--card),rgba(11,18,32,0.6));padding:14px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04)}
-    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--accent);font-weight:600;font-size:13px}
-    .title{font-size:16px;margin:10px 0 6px}
-    .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
-    .time{font-weight:700;color:#fff}
-    .days{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-    .day{padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
-
-    .regulars{margin-top:6px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.03);}
-    ul{margin:8px 0 0 18px;color:var(--muted)}
-
-    .controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);cursor:pointer}
-    .btn.primary{background:linear-gradient(90deg,var(--accent),#ff8a00);color:#071023;border:none}
-
-    footer{margin-top:22px;color:var(--muted);font-size:13px}
-
-    /* small devices */
-    @media (max-width:420px){
-      body{padding:18px}
-      .logo{width:52px;height:52px}
-      h1{font-size:18px}
-    }
   </style>
 </head>
 <body>
@@ -229,15 +195,15 @@
       <!-- Regular programs grouped -->
       <article class="card">
         <div class="tag">নিয়মিত আয়োজন</div>
-        <h2 class="title">সালাম মাহমুদ এর শিরোনামগুলো</h2>
+        <h2 class="title">সালাম মাহমুদ এর উপস্থাপনায়</h2>
         <div class="regulars">
           <ul>
 		  
-            <li>প্রেক্ষাপট — উপস্থাপনায়: সালাম মাহমুদ</li>
-            <li>তারকা আড্ডা — উপস্থাপনায়: সালাম মাহমুদ</li>
-            <li>Celebrity Show — উপস্থাপনায়: সালাম মাহমুদ</li>
-            <li>লাইফ স্টাইল — উপস্থাপনায়: সালাম মাহমুদ</li>
-            <li>ঝলমলে তারার গল্প — উপস্থাপনায়: সালাম মাহমুদ</li>
+            <li>প্রেক্ষাপট — </li>
+            <li>তারকা আড্ডা — </li>
+            <li>Celebrity Show — </li>
+            <li>লাইফ স্টাইল —</li>
+            <li>ঝলমলে তারার গল্প — </li>
           </ul>
         </div>
       </article>
